@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monster Slayer</title>
+    <script src="./app.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+    </style>
+</head>
+<body>
+    <header>
+        Monster Slayer
+    </header>
+    <main id="app">
+        <section>
+            <div class="player-stats monster">
+                <label for="monster">Monster's Health</label>
+                <div class="health">
+                    <div class="monster-health" :style="{width: monsterWidth}"></div>
+                </div>
+            </div>
+            <div class="player-stats player">
+                <label for="player">Your Health</label>
+                <div class="health">
+                    <div class="player-health" :style="{width: playerWidth}" ></div>
+                </div>
+            </div>
+        </section>
+        <div class="tactics-container">
+            <div class="tactic attack">
+                <button id="attackBtn" @click="playerAttackingMonster()">Attack</button>
+                <button id="splAttackBtn" @click="playerSplAttackingMonster()">Special Attack</button>
+            </div>
+            <div class="tactic special-container">
+                <button id="healBtn" @click="healPlayer()">Heal</button>
+                <button id="surrenderBtn" @click="surrenderGame()">Surrender</button>
+            </div>
+        </div>
+        <section class="battle-log">
+            Battle Log{{showPopUp}}
+            <div v-for="(log,index) in battleLog" :key="index">{{log}}</div>
+        </section>
+        <div class="game-over-modal modal" v-if="showPopUp">
+            <div class="modal-content">
+                <span class="modal-close" @click="showPopUp = !showPopUp; ">&times;</span>
+                <p id="modal-message">{{modalMessage}}</p>
+              </div>
+        </div>
+    </main>
+</body>
+</html>

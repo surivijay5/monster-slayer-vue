@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+header{
+    width: 100%;
+    text-align: center;
+    background-color: rgb(136, 0, 91);
+    color: white;
+    padding: 2rem;
+    font-size: large;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    width: 40vw;
+}
+
+section{
+    border: 1px solid rgba(88, 87, 87, 0.5);
+    padding: 1em;
+    margin: 2em;
+    border-radius: 10px;
+    box-shadow: 3px 5px 10px 0px rgba(114, 113, 113, 0.5);
+}
+
+.health{
+    border: 1px solid black;
+    height: 30px;
+    margin: 1rem 0px;
+}
+
+.monster-health{
+    width: 100%;
+    height: 100%;
+    background: rgb(111, 199, 23);
+}
+
+.player-health{
+    width: 100%;
+    height: 100%;
+    background: rgb(111, 199, 23);
+}
+
+.tactics-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 80%; */
+}
+
+.tactic{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    margin: 1em;
+    padding: 1em 2em;
+    cursor: pointer;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 7px;
+    background-color: rgb(136, 0, 91);
+    color: rgb(255, 255, 255);
+    border: none;
+    width: 200px;
+    height: 3em;
+}
+
+button:hover{
+    filter: brightness(120%);
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: block; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* The Close Button */
+  .modal-close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .modal-close:hover,
+  .modal-close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }

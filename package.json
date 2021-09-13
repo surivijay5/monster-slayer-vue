@@ -1,0 +1,19 @@
+{
+  "name": "monster-slayer-vue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/surivijay5/monster-slayer-vue.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/surivijay5/monster-slayer-vue/issues"
+  },
+  "homepage": "https://github.com/surivijay5/monster-slayer-vue#readme"
+}
